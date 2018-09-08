@@ -1,0 +1,2133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)https://voat.co/ -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head prefix="og: http://ogp.me/ns#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="en">
+    <link rel="http://oexchange.org/spec/0.8/rel/related-target" type="application/xrd+xml" href="http://voat.co/oexchange.xrd">
+    <title>Voat - have your say</title>
+    <meta name="description" content="a community platform where you can have your say. No censorship.">
+    <meta name="keywords" content="voat, voat.co, vote, submit, comment">
+    
+
+
+    <meta property="og:title" content="Voat - have your say">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="https://voat.co/images/voat-logo.png">
+    <meta property="og:site_name" content="Voat">
+    <meta property="og:description" content="a community platform where you can have your say. No censorship.">
+
+
+    
+    
+            <link rel="stylesheet" type="text/css" href="./voat_files/voat-light.min.css">
+    
+
+
+    <link rel="StyleSheet" href="./voat_files/autocompletebundle.min.css" type="text/css">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://voat.co/images/icons/arrow/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://voat.co/images/icons/arrow/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://voat.co/images/icons/arrow/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://voat.co/images/icons/arrow/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://voat.co/images/icons/arrow/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://voat.co/images/icons/arrow/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://voat.co/images/icons/arrow/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://voat.co/images/icons/arrow/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://voat.co/images/icons/arrow/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://voat.co/images/icons/arrow/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://voat.co/images/icons/arrow/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://voat.co/images/icons/arrow/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://voat.co/images/icons/arrow/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Voat">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="~/images/icons/arrow/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="~/images/icons/arrow/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="~/images/icons/arrow/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="~/images/icons/arrow/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="~/images/icons/arrow/mstile-310x310.png">
+    <link rel="shortcut icon" href="https://voat.co/favicon.ico" type="image/x-icon">
+
+    
+    
+
+
+
+</head>
+<body class="light vsc-initialized"><div id="StayFocusd-infobar" style="display: none; top: 0px;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+    
+
+
+
+
+<div style="display: none" id="share-a-link-overlay">
+    <div>
+        <h1>share a link</h1>
+    </div>
+</div>
+
+<div id="header" tabindex="0" role="banner">
+
+    
+
+
+
+
+<!-- This is the new container for dashboard menu -->
+<div id="dashboard-menu">
+    <!-- top bar is bar across top ;) -->
+    <div class="top-bar">
+        <nav>
+            <a href="https://voat.co/#">subscriptions</a>
+            <span class="drop-arrow"></span>
+                <!-- !important - Do not match on sr-bar (class or id) - will be removed in future versions -->
+                <ul class="flat-list sr-bar hover" id="sr-bar">
+                    <!-- The passphrase to the secret club is: "I'm with thee Goat. No, not that one. That isn't a goat, that is a ram." -->
+                    <li><a title="Front" href="https://voat.co/">front</a></li>
+                    <li><a href="https://voat.co/v/all">all</a></li>
+                    <li><a href="https://voat.co/s/Default">default</a></li>
+                    <li><a href="https://voat.co/random">random</a></li>
+
+                            <li><a href="https://voat.co/v/newsubverses">newsubverses</a></li>
+                            <li><a href="https://voat.co/v/introductions">introductions</a></li>
+                            <li><a href="https://voat.co/v/news">news</a></li>
+                            <li><a href="https://voat.co/v/videos">videos</a></li>
+                            <li><a href="https://voat.co/v/technology">technology</a></li>
+                            <li><a href="https://voat.co/v/science">science</a></li>
+                            <li><a href="https://voat.co/v/music">music</a></li>
+                            <li><a href="https://voat.co/v/gaming">gaming</a></li>
+                            <li><a href="https://voat.co/v/aww">aww</a></li>
+                            <li><a href="https://voat.co/v/books">books</a></li>
+                            <li><a href="https://voat.co/v/gifs">gifs</a></li>
+                            <li><a href="https://voat.co/v/sports">sports</a></li>
+                            <li><a href="https://voat.co/v/tv">tv</a></li>
+                            <li><a href="https://voat.co/v/programming">programming</a></li>
+                            <li><a href="https://voat.co/v/Goats">Goats</a></li>
+                            <li><a href="https://voat.co/v/movies">movies</a></li>
+                            <li><a href="https://voat.co/v/politics">politics</a></li>
+                            <li><a href="https://voat.co/v/AskVoat">AskVoat</a></li>
+                            <li><a href="https://voat.co/v/pics">pics</a></li>
+                            <li><a href="https://voat.co/v/religion">religion</a></li>
+                            <li><a href="https://voat.co/v/atheism">atheism</a></li>
+                            <li><a href="https://voat.co/v/ideasforvoat">ideasforvoat</a></li>
+                            <li><a href="https://voat.co/v/funny">funny</a></li>
+                            <li><a href="https://voat.co/v/announcements">announcements</a></li>
+                            <li><a href="https://voat.co/v/whatever">whatever</a></li>
+                            <li><a href="https://voat.co/v/IAMA">IAMA</a></li>
+                </ul>
+            
+        </nav>
+    </div>
+    <!-- This is the new drop down section -->
+    <div id="dashboard">
+        <div class="section head">
+            <!-- This section will likely include something at some time -->
+        </div>
+        <div class="section menu">
+            <h1>Menu</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://voat.co/discover">Discover</a></li>
+                        <li><a href="https://voat.co/account/login" onclick="mustLogin(); return false;">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <div class="section set">
+                <h1>Sets</h1>
+                <nav>
+                    <ul>
+                            <li><a href="https://voat.co/s/Default">Default</a></li>
+                            <li><a href="https://voat.co/s/Newsy">Newsy</a></li>
+                            <li><a href="https://voat.co/s/Sports">Sports</a></li>
+                            <li><a href="https://voat.co/s/Music">Music</a></li>
+                    </ul>
+                </nav>
+            </div>
+                    <div class="section subverse">
+                <h1>Subverses</h1>
+                <nav>
+                    <ul>
+                            <li><a href="https://voat.co/v/newsubverses">newsubverses</a></li>
+                            <li><a href="https://voat.co/v/introductions">introductions</a></li>
+                            <li><a href="https://voat.co/v/news">news</a></li>
+                            <li><a href="https://voat.co/v/videos">videos</a></li>
+                            <li><a href="https://voat.co/v/technology">technology</a></li>
+                            <li><a href="https://voat.co/v/science">science</a></li>
+                            <li><a href="https://voat.co/v/music">music</a></li>
+                            <li><a href="https://voat.co/v/gaming">gaming</a></li>
+                            <li><a href="https://voat.co/v/aww">aww</a></li>
+                            <li><a href="https://voat.co/v/books">books</a></li>
+                            <li><a href="https://voat.co/v/gifs">gifs</a></li>
+                            <li><a href="https://voat.co/v/sports">sports</a></li>
+                            <li><a href="https://voat.co/v/tv">tv</a></li>
+                            <li><a href="https://voat.co/v/programming">programming</a></li>
+                            <li><a href="https://voat.co/v/Goats">Goats</a></li>
+                            <li><a href="https://voat.co/v/movies">movies</a></li>
+                            <li><a href="https://voat.co/v/politics">politics</a></li>
+                            <li><a href="https://voat.co/v/AskVoat">AskVoat</a></li>
+                            <li><a href="https://voat.co/v/pics">pics</a></li>
+                            <li><a href="https://voat.co/v/religion">religion</a></li>
+                            <li><a href="https://voat.co/v/atheism">atheism</a></li>
+                            <li><a href="https://voat.co/v/ideasforvoat">ideasforvoat</a></li>
+                            <li><a href="https://voat.co/v/funny">funny</a></li>
+                            <li><a href="https://voat.co/v/announcements">announcements</a></li>
+                            <li><a href="https://voat.co/v/whatever">whatever</a></li>
+                            <li><a href="https://voat.co/v/IAMA">IAMA</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="section foot">
+            <!-- This section will likely include something at some time -->
+        </div>
+    </div>
+   
+</div>
+
+
+    <div id="header-container">
+        <div id="header-banner">
+
+            <a title="Voat - have your say" href="https://voat.co/" id="header-img-a">
+                <img id="header-img" src="./voat_files/voat-logo.png" alt="Voat" height="31" width="112">
+            </a>
+
+            <div id="show-menu-button"></div>
+
+
+
+    <ul class="tabmenu">
+        <li class="selected"><a href="https://voat.co/" title="Show most popular submissions">Hot</a></li>
+        <li class="disabled"><a href="https://voat.co/new" title="Show latest submissions">New</a></li>
+        <li class="disabled"><a href="https://voat.co/top" title="Show all time top ranked submissions">Top</a></li>
+            <li class="disabled"><a href="https://voat.co/v/all/new" title="Show latest submissions from all subverses">Incoming</a></li>
+        <li class="disabled"><a class="contribute submit-link" href="https://voat.co/submit?linkpost=true">Share a link</a></li>
+        <li class="disabled"><a class="contribute submit-text" href="https://voat.co/submit">Discuss</a></li>
+    </ul>
+            
+
+    <div id="header-account">
+        <div class="logged-out">
+            <span class="user">want to join? <a href="https://voat.co/account/login" onclick="mustLogin(); return false;" class="login-required" tabindex="1">login</a> or <a href="https://voat.co/account/register" class="login-required" tabindex="1">register</a> in seconds</span>
+        </div>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade" id="mustbeloggedinModal" tabindex="-1" role="dialog" aria-labelledby="mustbeloggedinlabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="mustbeloggedinlabel">Login or register</h4>
+                </div>
+                <div class="modal-body">
+                    You can login if you already have an account or register by clicking the button below.
+                    Registering is free and <strong>all you need is a username and password</strong>. We never ask you for your e-mail.
+                    <div>
+                        
+
+
+
+        <section id="loginForm">
+<form action="https://voat.co/Account/Login?ReturnUrl=%2F" class="form-horizontal" method="post" role="form" novalidate="novalidate"><input name="VoatRequestVerificationToken" type="hidden" value="CfDJ8FJoQipRFA9Fk67AhkXYZV9SghO1GpPDBz2B-HdTxf41JKsI83vNPQpTDB5ajGeaA86VX8InmE-0fAdMgK-c5SbzmIZduB2ZmzILePteHqJxBSfUBYz-8KPmn32XN59ktIZ6qvsOGhvRsOaWONCO2SQ">                <div>
+                    <h2></h2>
+                    <br>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="UserName">User name</label>
+                    <div class="col-md-4">
+                        <input class="form-control" data-val="true" data-val-length="The User name must be between 1 and 50 characters" data-val-length-max="50" data-val-length-min="1" data-val-required="Username is required. Please fill this field." id="UserName" name="UserName" type="text" value="">
+                        <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="Password">Password</label>
+                    <div class="col-md-4">
+                        <input class="form-control" data-val="true" data-val-length="The Password must be between 2 and 100 characters" data-val-length-max="100" data-val-length-min="2" data-val-required="A password is required. Please fill this field." id="Password" name="Password" type="password">
+                        <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-4">
+                        <div class="checkbox">
+                            <input data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true">
+                            <label for="RememberMe">Remember me?</label>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-4">
+                        <input type="submit" value="Log in" class="btn-whoaverse">
+                    </div>
+                </div>                
+<input name="RememberMe" type="hidden" value="false"></form>        </section>
+
+
+
+                       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>
+                        <b><a href="https://voat.co/Account/Register">Register</a></b> if you don't have an account. You know you want to ;)
+                    </p>
+                    <p>
+                        <b><a href="https://voat.co/Account/ForgotPassword">Forgot password?</a></b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+    body > .content .link .rank {
+        width: 3.2ex;
+    }
+</style>
+
+<div id="container">
+
+    
+
+
+<div class="side">
+
+    
+
+
+
+
+    <div class="spacer">
+        <a href="https://voat.co/submit?linkpost=true" class="btn-whoaverse btn-block contribute submit-link">
+            Share a link
+        </a>
+    </div>
+    <div class="spacer">
+        <a href="https://voat.co/submit" class="btn-whoaverse btn-block contribute submit-text">
+            Discuss
+        </a>
+    </div>
+    <div class="spacer">
+        <div class="sidebox">
+            <a href="https://voat.co/v/all/top" class="btn-whoaverse btn-block contribute">
+                Top Submissions
+            </a>
+        </div>
+    </div>
+    <div class="spacer">
+        <div class="sidebox create">
+            <a href="https://voat.co/subverses/create" class="btn-whoaverse btn-block">
+                Create your own subverse
+            </a>
+        </div>
+    </div>
+    <div class="spacer">
+        <div class="sidebox">
+            <a href="https://voat.co/discover" class="btn-whoaverse btn-block">
+                Explore Voat
+            </a>
+        </div>
+    </div>
+    <div class="spacer">
+        <div class="sidebox">
+            <a href="https://voat.co/random" class="btn-whoaverse btn-block">
+                Random Subverse
+            </a>
+        </div>
+    </div>
+    <div class="spacer">
+        <div class="sidebox">
+            <a href="https://voat.co/randomnsfw" class="btn-whoaverse btn-block">
+                Random NSFW Subverse
+            </a>
+        </div>
+    </div>
+        <div class="spacer">
+            <div class="sidebox">
+                <a href="https://voat.co/discover/set" class="btn-whoaverse btn-block">
+                    Explore Sets
+                </a>
+            </div>
+        </div>
+    <div class="spacer spacersection">
+        <div class="alert-h1">
+            Most viewed in the past 24 hours
+        </div>
+        <div>
+
+
+
+    <span><a href="https://voat.co/v/funny/2708059" tabindex="1" title="Guys only want one thing and it&#39;s digusting.">Guys only want one thing and it's digusting.</a></span>
+    <div class="tagline">funny / 11.9 hours ago</div>
+    <span><a href="https://voat.co/v/fatpeoplehate/2707552" tabindex="1" title="Never be nice to fat people. Never.">Never be nice to fat people. Never.</a></span>
+    <div class="tagline">fatpeoplehate / 19 hours ago</div>
+    <span><a href="https://voat.co/v/AskVoat/2707737" tabindex="1" title="NFL Season Opener Ratings Crash To Multi-Year Low... How low do you think the ratings can go?">NFL Season Opener Ratings Crash To Multi-Year Low... How low do you think the ratings can go?</a></span>
+    <div class="tagline">AskVoat / 16 hours ago</div>
+    <span><a href="https://voat.co/v/politics/2708249" tabindex="1" title="Race is real. The BBC admits defeat. - &quot;Researchers have found that a childs genes significantly influence their long-term performance in school beyond even intelligence. &quot;">Race is real. The BBC admits defeat. - "Researchers have found that a childs genes significantly influence their long-term performance in school beyond even intelligence. "</a></span>
+    <div class="tagline">politics / 9.5 hours ago</div>
+    <span><a href="https://voat.co/v/news/2708425" tabindex="1" title="US Airforce Is Investigating Elon&#39;s Musk&#39;s Pot Smoking, Potentialy Ending SpaceX Contracts.">US Airforce Is Investigating Elon's Musk's Pot Smoking, Potentialy Ending SpaceX Contracts.</a></span>
+    <div class="tagline">news / 6.9 hours ago</div>
+        </div>
+    </div>
+        <div class="spacer">
+            <div class="sidecontentbox ">
+                
+                <div class="sidecontentbox content">
+                    <div class="title">
+                        <h1 class="alert-h1">Unofficial Voat Mobile Apps</h1>
+                    </div>
+                    <p>
+                        We love these apps!
+                    </p>
+                    <p>
+                        Android: 
+                        <br>
+                        <a href="https://play.google.com/store/apps/details?id=com.SpaceMonkey.Boats">Boats for Voat</a>
+                        <br>
+                        <a href="https://play.google.com/store/apps/details?id=net.pr0npaganda.appvoat&amp;hl=en">Appvoat</a>
+                    </p>
+                    <p>iOS:
+                        <br>
+                        <a href="https://voatify.com/">Voatify</a>
+                    </p>
+                    <br>
+                    <p>If you see another Voat apps in the wild, do let us know!</p>
+                </div>
+            </div>
+        </div>
+    <div class="spacer">
+        <div class="sidecontentbox ">
+            
+
+
+    <div class="title">
+        <h1 class="alert-h1">Advertisement</h1>
+    </div>
+    <div class="sidecontentbox content">
+        <a href="http://atozwire.com/#vc" target="_blank">
+                <div style="margin:0 auto;width: 270px;">
+                    <img src="./voat_files/atozwire_voat.jpg" alt="AtoZwire.com" title="Ad: AtoZwire.com" width="270">
+                </div>
+        </a>
+        <p></p><p>Free kindle books that aren't complete crap. Deal on the things we're going to buy anyway. AtoZwire.com</p>
+<p><a href="https://voat.co/advertize">Want to advertize on Voat?</a></p><p></p>
+    </div>
+
+        </div>
+    </div>
+    <div class="spacer">
+    <div class="sidecontentbox ">
+        <div class="title">
+            <h1 class="alert-h1">SITE LOGS</h1>
+        </div>
+        <ul class="content">
+            <li><a rel="nofollow" href="https://voat.co/log/banned/user">Banned users</a></li>
+            <li><a rel="nofollow" href="https://voat.co/log/banned/domain">Banned domains</a></li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+
+    <div class="content" role="main">
+
+
+        <div class="sitetable linklisting">
+
+
+    <div class="alert alert-firsttimevisitorwelcome alert-dismissible" role="alert" style="" id="firsttimevisitorwelcomemessage">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <p>Hi, it looks like you're new. Welcome to Voat!</p>
+        <p>Voat is a censorship-free community platform where content is submitted, organized, moderated and voted on (ranked) by the users.</p>
+        <p>Users can earn a percentage of our ad-revenue share for the content they submit.</p>
+        <a href="https://voat.co/about/intro" class="btn-voat">Take a tour</a>
+    </div>
+
+
+
+
+
+<div class="submission id-2708678 even link " data-fullname="2708678" data-ups="62" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">61</div>
+            <div class="score likes">62</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://imgoat.com/uploads/a09c8844ba/143944.jpeg" target="_self">
+                        <img src="./voat_files/2a306fcb-cf0c-4193-ad31-1c33922c0bd1.jpg" alt="Ancient skull found">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://imgoat.com/uploads/a09c8844ba/143944.jpeg" tabindex="1" title="Ancient skull found" target="_self">Ancient skull found</a>
+                <span class="domain">(<a href="https://voat.co/domains/imgoat.com">imgoat.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPEG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 5:01:35 AM" datetime="9/8/2018 5:01:35 AM">2.2 hours</time> ago by <a href="https://voat.co/user/boekanier" class="author may-blank userinfo tooltipstered" data-username="boekanier">boekanier</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/funny" class="subverse hover may-blank">funny</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+62</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/funny/2708678" class="comments may-blank">9 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2707746 odd link " data-fullname="2707746" data-ups="56" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">55</div>
+            <div class="score likes">56</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://www.yahoo.com/entertainment/asia-argento-claims-she-sexually-141339205.html" tabindex="1" title="&quot;Um, actually, that 17 year-old sexually assaulted ME, yeah, that&#39;s what happened.&quot; Asia Argento seemingly gets advice from the same source Cosby did" target="_self">"Um, actually, that 17 year-old sexually assaulted ME, yeah, that's what happened." Asia Argento seemingly gets advice from the same source Cosby did</a>
+                <span class="domain">(<a href="https://voat.co/domains/yahoo.com">yahoo.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 3:20:20 PM" datetime="9/7/2018 3:20:20 PM">16 hours</time> ago by <a href="https://voat.co/user/Some_Guy_from_RI" class="author may-blank userinfo tooltipstered" data-username="Some_Guy_from_RI">Some_Guy_from_RI</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/movies" class="subverse hover may-blank">movies</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+56</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/movies/2707746" class="comments may-blank">27 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708279 even link " data-fullname="2708279" data-ups="155" data-downs="3">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">3</div>
+            <div class="score unvoted">152</div>
+            <div class="score likes">155</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://www.bitchute.com/channel/9c7qJvwx7YQT/" target="_self">
+                        <img src="./voat_files/6b2ca8ca-8996-4b43-a2f4-8e418af029e0.jpg" alt="Alex Jones is posting all his videos to Bitchute. Also, GetOnGab and minds.com None are censored, he &amp; others were censored by youtube/facebook">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://www.bitchute.com/channel/9c7qJvwx7YQT/" tabindex="1" title="Alex Jones is posting all his videos to Bitchute. Also, GetOnGab and minds.com None are censored, he &amp; others were censored by youtube/facebook" target="_self">Alex Jones is posting all his videos to Bitchute. Also, GetOnGab and minds.com None are censored, he &amp; others were censored by youtube/facebook</a>
+                <span class="domain">(<a href="https://voat.co/domains/bitchute.com">bitchute.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 10:15:27 PM" datetime="9/7/2018 10:15:27 PM">9 hours</time> ago by <a href="https://voat.co/user/MatterzStrange" class="author may-blank userinfo tooltipstered" data-username="MatterzStrange">MatterzStrange</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/videos" class="subverse hover may-blank">videos</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+155</span>|<span class="post_downvotes">-3</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/videos/2708279" class="comments may-blank">59 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2707718 odd link " data-fullname="2707718" data-ups="80" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">78</div>
+            <div class="score likes">80</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://www.sciencenews.org/article/saturn-has-two-hexagons-not-one-swirling-around-its-north-pole" target="_self">
+                        <img src="./voat_files/2273778f-bf4c-419e-bbe4-7fcc652d7553.jpg" alt="Saturn has two hexagons, not one, swirling around its north pole">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://www.sciencenews.org/article/saturn-has-two-hexagons-not-one-swirling-around-its-north-pole" tabindex="1" title="Saturn has two hexagons, not one, swirling around its north pole" target="_self">Saturn has two hexagons, not one, swirling around its north pole</a>
+                <span class="domain">(<a href="https://voat.co/domains/sciencenews.org">sciencenews.org</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 3:04:43 PM" datetime="9/7/2018 3:04:43 PM">16 hours</time> ago by <a href="https://voat.co/user/WitnesstheSalt" class="author may-blank userinfo tooltipstered" data-username="WitnesstheSalt">WitnesstheSalt</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/science" class="subverse hover may-blank">science</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+80</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/science/2707718" class="comments may-blank">69 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708180 even link " data-fullname="2708180" data-ups="34" data-downs="0">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">34</div>
+            <div class="score likes">34</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 100%"></div>
+        <div class="scorebar-dislikes" style="height: 0%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="http://datechguyblog.com/wp-content/uploads/2016/08/liberal-tebow-800.jpg" target="_self">
+                        <img src="./voat_files/0371f0ac-ea4c-4968-886d-3cdf708ea4e9.jpg" alt="Why didn&#39;t Nike hire Tebow?">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="http://datechguyblog.com/wp-content/uploads/2016/08/liberal-tebow-800.jpg" tabindex="1" title="Why didn&#39;t Nike hire Tebow?" target="_self">Why didn't Nike hire Tebow?</a>
+                <span class="domain">(<a href="https://voat.co/domains/datechguyblog.com">datechguyblog.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 8:43:25 PM" datetime="9/7/2018 8:43:25 PM">10.5 hours</time> ago by <a href="https://voat.co/user/mememeyou" class="author may-blank userinfo tooltipstered" data-username="mememeyou">mememeyou</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/sports" class="subverse hover may-blank">sports</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+34</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/sports/2708180" class="comments may-blank">10 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2707906 odd link " data-fullname="2707906" data-ups="76" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">74</div>
+            <div class="score likes">76</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 97%"></div>
+        <div class="scorebar-dislikes" style="height: 3%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://uploads.disquscdn.com/images/6036418ccb21ed3cb88a67021471c7c9431c665fb9f91804cc892f967777065a.gif" target="_self">
+                        <img src="./voat_files/469d2637-6bfd-4ddd-ad5d-0f1fc303eb4c.jpg" alt="Screw you, Darwin">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://uploads.disquscdn.com/images/6036418ccb21ed3cb88a67021471c7c9431c665fb9f91804cc892f967777065a.gif" tabindex="1" title="Screw you, Darwin" target="_self">Screw you, Darwin</a>
+                <span class="domain">(<a href="https://voat.co/domains/uploads.disquscdn.com">uploads.disquscdn.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="GIF"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 5:20:59 PM" datetime="9/7/2018 5:20:59 PM">14 hours</time> ago by <a href="https://voat.co/user/Some_Guy_from_RI" class="author may-blank userinfo tooltipstered" data-username="Some_Guy_from_RI">Some_Guy_from_RI</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/gifs" class="subverse hover may-blank">gifs</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+76</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/gifs/2707906" class="comments may-blank">16 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708609 even link " data-fullname="2708609" data-ups="64" data-downs="3">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">3</div>
+            <div class="score unvoted">61</div>
+            <div class="score likes">64</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 96%"></div>
+        <div class="scorebar-dislikes" style="height: 4%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="http://www.dailymail.co.uk/news/article-6144837/Trump-says-use-MILITARY-build-wall-Congress-wont-fund-DHS.html" target="_self">
+                        <img src="./voat_files/ea7755bf-d7a6-4fba-9771-ba4560e41f42.jpg" alt="Trump says he could use the MILITARY to build his wall if Congress won&#39;t fund it through Homeland Security&#39;s budget">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="http://www.dailymail.co.uk/news/article-6144837/Trump-says-use-MILITARY-build-wall-Congress-wont-fund-DHS.html" tabindex="1" title="Trump says he could use the MILITARY to build his wall if Congress won&#39;t fund it through Homeland Security&#39;s budget" target="_self">Trump says he could use the MILITARY to build his wall if Congress won't fund it through Homeland Security's budget</a>
+                <span class="domain">(<a href="https://voat.co/domains/dailymail.co.uk">dailymail.co.uk</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 3:46:32 AM" datetime="9/8/2018 3:46:32 AM">3.4 hours</time> ago by <a href="https://voat.co/user/zenmastery" class="author may-blank userinfo tooltipstered" data-username="zenmastery">zenmastery</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/politics" class="subverse hover may-blank">politics</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+64</span>|<span class="post_downvotes">-3</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/politics/2708609" class="comments may-blank">60 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2707532 odd link " data-fullname="2707532" data-ups="88" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">86</div>
+            <div class="score likes">88</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://medicalxpress.com/news/2018-09-neurons-cognition-alzheimer-mouse.html" target="_self">
+                        <img src="./voat_files/cf982ee9-f728-4c36-bd3b-6420a906103c.jpg" alt="Study shows how exercise generates new neurons, improves cognition in Alzheimer&#39;s mouse">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://medicalxpress.com/news/2018-09-neurons-cognition-alzheimer-mouse.html" tabindex="1" title="Study shows how exercise generates new neurons, improves cognition in Alzheimer&#39;s mouse" target="_self">Study shows how exercise generates new neurons, improves cognition in Alzheimer's mouse</a>
+                <span class="domain">(<a href="https://voat.co/domains/medicalxpress.com">medicalxpress.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 11:59:20 AM" datetime="9/7/2018 11:59:20 AM">19 hours</time> ago by <a href="https://voat.co/user/not_drunk" class="author may-blank userinfo tooltipstered" data-username="not_drunk">not_drunk</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/science" class="subverse hover may-blank">science</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+88</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/science/2707532" class="comments may-blank">17 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708650 even link " data-fullname="2708650" data-ups="44" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">42</div>
+            <div class="score likes">44</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 96%"></div>
+        <div class="scorebar-dislikes" style="height: 4%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://i.imgtc.com/ln1IiYt.jpg" target="_self">
+                        <img src="./voat_files/6f1780f1-0497-4cf1-878a-94c5990f88fa.jpg" alt="His name was Seth Rich">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://i.imgtc.com/ln1IiYt.jpg" tabindex="1" title="His name was Seth Rich" target="_self">His name was Seth Rich</a>
+                <span class="domain">(<a href="https://voat.co/domains/i.imgtc.com">i.imgtc.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 4:21:40 AM" datetime="9/8/2018 4:21:40 AM">2.8 hours</time> ago by <a href="https://voat.co/user/Grumpy_Old_Man" class="author may-blank userinfo tooltipstered" data-username="Grumpy_Old_Man">Grumpy_Old_Man</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/whatever" class="subverse hover may-blank">whatever</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+44</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/whatever/2708650" class="comments may-blank">6 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708502 odd link " data-fullname="2708502" data-ups="105" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">104</div>
+            <div class="score likes">105</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 99%"></div>
+        <div class="scorebar-dislikes" style="height: 1%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://www.westernjournal.com/ct/james-woods-calls-shareholders-incredible-plan-shutdown-nike/" target="_self">
+                        <img src="./voat_files/0d44860a-c9f9-469c-940c-c892977fc38c.jpg" alt="James Woods Calls on Shareholders to Dump Nike Stock">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://www.westernjournal.com/ct/james-woods-calls-shareholders-incredible-plan-shutdown-nike/" tabindex="1" title="James Woods Calls on Shareholders to Dump Nike Stock" target="_self">James Woods Calls on Shareholders to Dump Nike Stock</a>
+                <span class="domain">(<a href="https://voat.co/domains/westernjournal.com">westernjournal.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 2:16:27 AM" datetime="9/8/2018 2:16:27 AM">4.9 hours</time> ago by <a href="https://voat.co/user/EatDaP00P00" class="author may-blank userinfo tooltipstered" data-username="EatDaP00P00">EatDaP00P00</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/news" class="subverse hover may-blank">news</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+105</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/news/2708502" class="comments may-blank">28 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708686 even link " data-fullname="2708686" data-ups="22" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">21</div>
+            <div class="score likes">22</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 96%"></div>
+        <div class="scorebar-dislikes" style="height: 4%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://imgoat.com/uploads/a09c8844ba/143947.jpeg" target="_self">
+                        <img src="./voat_files/19248435-e788-4212-9383-395456809c1c.jpg" alt="Tea isn&#39;t good for her">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://imgoat.com/uploads/a09c8844ba/143947.jpeg" tabindex="1" title="Tea isn&#39;t good for her" target="_self">Tea isn't good for her</a>
+                <span class="domain">(<a href="https://voat.co/domains/imgoat.com">imgoat.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPEG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 5:08:08 AM" datetime="9/8/2018 5:08:08 AM">2.1 hours</time> ago by <a href="https://voat.co/user/boekanier" class="author may-blank userinfo tooltipstered" data-username="boekanier">boekanier</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/funny" class="subverse hover may-blank">funny</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+22</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/funny/2708686" class="comments may-blank">5 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708249 odd link " data-fullname="2708249" data-ups="187" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">185</div>
+            <div class="score likes">187</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 99%"></div>
+        <div class="scorebar-dislikes" style="height: 1%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="http://www.bbc.com/future/story/20180905-how-genes-influence-achievement-and-success-in-school" target="_self">
+                        <img src="./voat_files/1930d9b9-0112-4d27-a138-c023c09e6257.jpg" alt="Race is real. The BBC admits defeat. - &quot;Researchers have found that a childs genes significantly influence their long-term performance in school beyond even intelligence. &quot;">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="http://www.bbc.com/future/story/20180905-how-genes-influence-achievement-and-success-in-school" tabindex="1" title="Race is real. The BBC admits defeat. - &quot;Researchers have found that a childs genes significantly influence their long-term performance in school beyond even intelligence. &quot;" target="_self">Race is real. The BBC admits defeat. - "Researchers have found that a childs genes significantly influence their long-term performance in school beyond even intelligence. "</a>
+                <span class="domain">(<a href="https://voat.co/domains/bbc.com">bbc.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 9:40:12 PM" datetime="9/7/2018 9:40:12 PM">9.5 hours</time> ago by <a href="https://voat.co/user/EmmetMcTaggart" class="author may-blank userinfo tooltipstered" data-username="EmmetMcTaggart">EmmetMcTaggart</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/politics" class="subverse hover may-blank">politics</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+187</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/politics/2708249" class="comments may-blank">88 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2707909 even link " data-fullname="2707909" data-ups="208" data-downs="9">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">9</div>
+            <div class="score unvoted">199</div>
+            <div class="score likes">208</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 96%"></div>
+        <div class="scorebar-dislikes" style="height: 4%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://i.imgur.com/1S9c0gw.jpg" target="_self">
+                        <img src="./voat_files/a3768931-b06a-4cf7-86ca-da43c48a11f4.jpg" alt="Just ignore it">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://i.imgur.com/1S9c0gw.jpg" tabindex="1" title="Just ignore it" target="_self">Just ignore it</a>
+                <span class="domain">(<a href="https://voat.co/domains/i.imgur.com">i.imgur.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 5:22:54 PM" datetime="9/7/2018 5:22:54 PM">14 hours</time> ago by <a href="https://voat.co/user/TrevorLyman" class="author may-blank userinfo tooltipstered" data-username="TrevorLyman">TrevorLyman</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/politics" class="subverse hover may-blank">politics</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+208</span>|<span class="post_downvotes">-9</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/politics/2707909" class="comments may-blank">30 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708570 odd link " data-fullname="2708570" data-ups="24" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">23</div>
+            <div class="score likes">24</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 96%"></div>
+        <div class="scorebar-dislikes" style="height: 4%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://theconservativetreehouse.com/2018/09/07/canadian-economy-loses-51600-jobs-in-august-biggest-drop-in-decade/" target="_self">
+                        <img src="./voat_files/5898c500-3b28-4e02-bbc2-455ffd4a972e.jpg" alt="Canadian Economy Loses 51,600 Jobs in August Biggest Drop in Decade">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://theconservativetreehouse.com/2018/09/07/canadian-economy-loses-51600-jobs-in-august-biggest-drop-in-decade/" tabindex="1" title="Canadian Economy Loses 51,600 Jobs in August Biggest Drop in Decade" target="_self">Canadian Economy Loses 51,600 Jobs in August Biggest Drop in Decade</a>
+                <span class="domain">(<a href="https://voat.co/domains/theconservativetreehouse.com">theconservativetreehouse.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 3:02:59 AM" datetime="9/8/2018 3:02:59 AM">4.2 hours</time> ago by <a href="https://voat.co/user/HarlandKornfeld14" class="author may-blank userinfo tooltipstered" data-username="HarlandKornfeld14">HarlandKornfeld14</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/news" class="subverse hover may-blank">news</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+24</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/news/2708570" class="comments may-blank">7 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708584 even link " data-fullname="2708584" data-ups="66" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">64</div>
+            <div class="score likes">66</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 97%"></div>
+        <div class="scorebar-dislikes" style="height: 3%"></div>
+    </div>
+
+    
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="http://thehill.com/policy/technology/405675-apple-bans-infowars-app-from-store-report" tabindex="1" title="#BREAKING: Apple permanently bans Alex Jones and InfoWars from App Store JUST NOW" target="_self">#BREAKING: Apple permanently bans Alex Jones and InfoWars from App Store JUST NOW</a>
+                <span class="domain">(<a href="https://voat.co/domains/thehill.com">thehill.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 3:15:28 AM" datetime="9/8/2018 3:15:28 AM">4 hours</time> ago by <a href="https://voat.co/user/BitChute" class="author may-blank userinfo tooltipstered" data-username="BitChute">BitChute</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/news" class="subverse hover may-blank">news</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+66</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/news/2708584" class="comments may-blank">21 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708226 odd link " data-fullname="2708226" data-ups="171" data-downs="5">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">5</div>
+            <div class="score unvoted">166</div>
+            <div class="score likes">171</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 97%"></div>
+        <div class="scorebar-dislikes" style="height: 3%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://4.bp.blogspot.com/-Ya7Ar_ohfYc/W5Lh-xlUxcI/AAAAAAAAMz0/G265m9z282oXZeVWiCr_WOw90aSSXvS-QCLcBGAs/s1600/there-is-not-enough-rap-songs.jpg" target="_self">
+                        <img src="./voat_files/501c5c43-1c66-4695-b636-ae23b1a9fc83.jpg" alt="You can say that again...">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://4.bp.blogspot.com/-Ya7Ar_ohfYc/W5Lh-xlUxcI/AAAAAAAAMz0/G265m9z282oXZeVWiCr_WOw90aSSXvS-QCLcBGAs/s1600/there-is-not-enough-rap-songs.jpg" tabindex="1" title="You can say that again..." target="_self">You can say that again...</a>
+                <span class="domain">(<a href="https://voat.co/domains/4.bp.blogspot.com">4.bp.blogspot.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 9:16:50 PM" datetime="9/7/2018 9:16:50 PM">9.9 hours</time> ago by <a href="https://voat.co/user/Some_Guy_from_RI" class="author may-blank userinfo tooltipstered" data-username="Some_Guy_from_RI">Some_Guy_from_RI</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/funny" class="subverse hover may-blank">funny</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+171</span>|<span class="post_downvotes">-5</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/funny/2708226" class="comments may-blank">29 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708227 even link " data-fullname="2708227" data-ups="85" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">83</div>
+            <div class="score likes">85</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://www.youtube.com/watch?v=NzXjB25Y-gk" target="_self">
+                        <img src="./voat_files/aeead3d2-4342-439e-bf93-77e0e1cc5c4e.jpg" alt="Alex Jones: &quot;I can&#39;t believe you talk back. You&#39;re supposed to be a meme.&quot;">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://www.youtube.com/watch?v=NzXjB25Y-gk" tabindex="1" title="Alex Jones: &quot;I can&#39;t believe you talk back. You&#39;re supposed to be a meme.&quot;" target="_self">Alex Jones: "I can't believe you talk back. You're supposed to be a meme."</a>
+                <span class="domain">(<a href="https://voat.co/domains/youtube.com">youtube.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="YouTube"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 9:18:10 PM" datetime="9/7/2018 9:18:10 PM">9.9 hours</time> ago by <a href="https://voat.co/user/Some_Guy_from_RI" class="author may-blank userinfo tooltipstered" data-username="Some_Guy_from_RI">Some_Guy_from_RI</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/politics" class="subverse hover may-blank">politics</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+85</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/politics/2708227" class="comments may-blank">35 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708511 odd link " data-fullname="2708511" data-ups="50" data-downs="3">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">3</div>
+            <div class="score unvoted">47</div>
+            <div class="score likes">50</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 94%"></div>
+        <div class="scorebar-dislikes" style="height: 6%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://imgoat.com/uploads/a09c8844ba/143911.jpg" target="_self">
+                        <img src="./voat_files/5e6efe99-09d7-4907-8a34-a87f59e4c0c7.jpg" alt="Obama is like a seagull...">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://imgoat.com/uploads/a09c8844ba/143911.jpg" tabindex="1" title="Obama is like a seagull..." target="_self">Obama is like a seagull...</a>
+                <span class="domain">(<a href="https://voat.co/domains/imgoat.com">imgoat.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 2:21:42 AM" datetime="9/8/2018 2:21:42 AM">4.8 hours</time> ago by <a href="https://voat.co/user/Vvswiftvv17" class="author may-blank userinfo tooltipstered" data-username="Vvswiftvv17">Vvswiftvv17</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/funny" class="subverse hover may-blank">funny</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+50</span>|<span class="post_downvotes">-3</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/funny/2708511" class="comments may-blank">2 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708541 even link " data-fullname="2708541" data-ups="61" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">60</div>
+            <div class="score likes">61</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://100percentfedup.com/four-flights-arrive-within-36-hours-with-sick-passengers-who-visited-the-same-place-video/" target="_self">
+                        <img src="./voat_files/d0b7c2df-8a69-46e6-8e70-a628f3a9ddb0.jpg" alt="FOUR FLIGHTS Arrive In The US Within 36 Hours With Sick Passengers Who Attended The Religious Pilgrimage &#39;Hajj&#39; In Saudi Arabia [Video]">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://100percentfedup.com/four-flights-arrive-within-36-hours-with-sick-passengers-who-visited-the-same-place-video/" tabindex="1" title="FOUR FLIGHTS Arrive In The US Within 36 Hours With Sick Passengers Who Attended The Religious Pilgrimage &#39;Hajj&#39; In Saudi Arabia [Video]" target="_self">FOUR FLIGHTS Arrive In The US Within 36 Hours With Sick Passengers Who Attended The Religious Pilgrimage 'Hajj' In Saudi Arabia [Video]</a>
+                <span class="domain">(<a href="https://voat.co/domains/100percentfedup.com">100percentfedup.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 2:45:26 AM" datetime="9/8/2018 2:45:26 AM">4.5 hours</time> ago by <a href="https://voat.co/user/Scrooblemeyer" class="author may-blank userinfo tooltipstered" data-username="Scrooblemeyer">Scrooblemeyer</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/news" class="subverse hover may-blank">news</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+61</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/news/2708541" class="comments may-blank">10 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708456 odd link " data-fullname="2708456" data-ups="68" data-downs="4">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">4</div>
+            <div class="score unvoted">64</div>
+            <div class="score likes">68</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 94%"></div>
+        <div class="scorebar-dislikes" style="height: 6%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://imgoat.com/uploads/a09c8844ba/143894.jpg" target="_self">
+                        <img src="./voat_files/d5422df5-3dea-4ac7-b422-1b8e65d0f4ce.jpg" alt="Man, I miss these fun old videogames!">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://imgoat.com/uploads/a09c8844ba/143894.jpg" tabindex="1" title="Man, I miss these fun old videogames!" target="_self">Man, I miss these fun old videogames!</a>
+                <span class="domain">(<a href="https://voat.co/domains/imgoat.com">imgoat.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 12:58:12 AM" datetime="9/8/2018 12:58:12 AM">6.2 hours</time> ago by <a href="https://voat.co/user/lord_nougat" class="author may-blank userinfo tooltipstered" data-username="lord_nougat">lord_nougat</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/funny" class="subverse hover may-blank">funny</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+68</span>|<span class="post_downvotes">-4</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/funny/2708456" class="comments may-blank">18 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2707651 even link " data-fullname="2707651" data-ups="227" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">225</div>
+            <div class="score likes">227</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 99%"></div>
+        <div class="scorebar-dislikes" style="height: 1%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="http://magaimg.net///img/5x6j.jpg" target="_self">
+                        <img src="./voat_files/8d6c82c1-ce05-4f37-8ac5-b23832cd2213.jpg" alt="It&#39;s Ok to be Anti-White, according to Twitter">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="http://magaimg.net///img/5x6j.jpg" tabindex="1" title="It&#39;s Ok to be Anti-White, according to Twitter" target="_self">It's Ok to be Anti-White, according to Twitter</a>
+                <span class="domain">(<a href="https://voat.co/domains/magaimg.net">magaimg.net</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 2:19:18 PM" datetime="9/7/2018 2:19:18 PM">17 hours</time> ago by <a href="https://voat.co/user/WhoFramedReaderRabit" class="author may-blank userinfo tooltipstered" data-username="WhoFramedReaderRabit">WhoFramedReaderRabit</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/politics" class="subverse hover may-blank">politics</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+227</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/politics/2707651" class="comments may-blank">25 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708059 odd link " data-fullname="2708059" data-ups="214" data-downs="2">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">2</div>
+            <div class="score unvoted">212</div>
+            <div class="score likes">214</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 99%"></div>
+        <div class="scorebar-dislikes" style="height: 1%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://imgoat.com/uploads/a09c8844ba/143832.jpeg" target="_self">
+                        <img src="./voat_files/6b51d656-41fa-4952-91c9-d6e237533496.jpg" alt="Guys only want one thing and it&#39;s digusting.">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://imgoat.com/uploads/a09c8844ba/143832.jpeg" tabindex="1" title="Guys only want one thing and it&#39;s digusting." target="_self">Guys only want one thing and it's digusting.</a>
+                <span class="domain">(<a href="https://voat.co/domains/imgoat.com">imgoat.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPEG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 7:16:41 PM" datetime="9/7/2018 7:16:41 PM">11.9 hours</time> ago by <a href="https://voat.co/user/Bill_Murrays_Sandals" class="author may-blank userinfo tooltipstered" data-username="Bill_Murrays_Sandals">Bill_Murrays_Sandals</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/funny" class="subverse hover may-blank">funny</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+214</span>|<span class="post_downvotes">-2</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/funny/2708059" class="comments may-blank">95 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708458 even link " data-fullname="2708458" data-ups="95" data-downs="6">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">6</div>
+            <div class="score unvoted">89</div>
+            <div class="score likes">95</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 94%"></div>
+        <div class="scorebar-dislikes" style="height: 6%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://bigleaguepolitics.com/pbs-host-lindsay-ellis-i-get-really-excited-about-white-genocide/" target="_self">
+                        <img src="./voat_files/8bfb80a8-4844-4c55-b3e8-c704669cccf8.jpg" alt="PBS Host Lindsay Ellis: &#39;I Get Really Excited About White Genocide&#39;">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://bigleaguepolitics.com/pbs-host-lindsay-ellis-i-get-really-excited-about-white-genocide/" tabindex="1" title="PBS Host Lindsay Ellis: &#39;I Get Really Excited About White Genocide&#39;" target="_self">PBS Host Lindsay Ellis: 'I Get Really Excited About White Genocide'</a>
+                <span class="domain">(<a href="https://voat.co/domains/bigleaguepolitics.com">bigleaguepolitics.com</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="9/8/2018 1:04:09 AM" datetime="9/8/2018 1:04:09 AM">6.1 hours</time> ago by <a href="https://voat.co/user/sivsta" class="author may-blank userinfo tooltipstered" data-username="sivsta">sivsta</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/news" class="subverse hover may-blank">news</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+95</span>|<span class="post_downvotes">-6</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/news/2708458" class="comments may-blank">52 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2707737 odd link self" data-fullname="2707737" data-ups="46" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">45</div>
+            <div class="score likes">46</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 98%"></div>
+        <div class="scorebar-dislikes" style="height: 2%"></div>
+    </div>
+
+    
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/2707737" tabindex="1" title="NFL Season Opener Ratings Crash To Multi-Year Low... How low do you think the ratings can go?" target="_self">NFL Season Opener Ratings Crash To Multi-Year Low... How low do you think the ratings can go?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="toggleExpando(this)"></div>
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 3:15:36 PM" datetime="9/7/2018 3:15:36 PM">16 hours</time> ago by <a href="https://voat.co/user/anzel2002" class="author may-blank userinfo tooltipstered" data-username="anzel2002">anzel2002</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+46</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/AskVoat/2707737" class="comments may-blank">43 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            <p>NFL Season Opener Ratings Crash To Multi-Year Low... How low do you think the ratings can go?</p>
+<p>Is future of the NFL in trouble?</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+<div class="submission id-2708155 even link " data-fullname="2708155" data-ups="190" data-downs="5">
+    <p class="parent"></p>
+
+    
+
+
+        <div class="midcol unvoted voting-icons">
+                <div class="arrow-upvote login-required  arrow-up" onclick="mustLogin();" role="button" aria-label="upvote" tabindex="0"></div>
+            <div class="score dislikes">5</div>
+            <div class="score unvoted">185</div>
+            <div class="score likes">190</div>
+                <div class="arrow-downvote login-required  arrow-down" onclick="mustLogin();" role="button" aria-label="downvote" tabindex="0"></div>
+        </div>
+    <div class="scorebar" title="Blue = upvotes, violet = downvotes">
+        <div class="scorebar-likes" style="height: 97%"></div>
+        <div class="scorebar-dislikes" style="height: 3%"></div>
+    </div>
+
+    
+                    <a class="thumbnail may-blank" href="https://imgoat.com/uploads/a09c8844ba/143847.jpg" target="_self">
+                        <img src="./voat_files/867ca661-eb93-48cd-8d9d-d38b1f90fbb8.jpg" alt="(((capitalism)))">
+                    </a>
+        <div class="entry unvoted">
+            <p class="title">
+
+                
+
+
+
+
+    <span id="linkflair" class="" title=""></span>
+
+
+                <a class="title may-blank " href="https://imgoat.com/uploads/a09c8844ba/143847.jpg" tabindex="1" title="(((capitalism)))" target="_self">(((capitalism)))</a>
+                <span class="domain">(<a href="https://voat.co/domains/imgoat.com">imgoat.com</a>)</span>
+            </p><div class="expando-button collapsed selftext" title="JPG"></div>
+
+                    <p class="tagline">
+                        submitted <time title="9/7/2018 8:25:35 PM" datetime="9/7/2018 8:25:35 PM">10.8 hours</time> ago by <a href="https://voat.co/user/goytoynamedtroy" class="author may-blank userinfo tooltipstered" data-username="goytoynamedtroy">goytoynamedtroy</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/whatever" class="subverse hover may-blank">whatever</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+190</span>|<span class="post_downvotes">-5</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                    <a href="https://voat.co/v/whatever/2708155" class="comments may-blank">49 comments</a>
+                </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+        </div>
+
+        
+
+
+
+    <div class="pagination-container">
+        <ul>
+                            <li class="btn-whoaverse-paging">
+                        <a href="https://voat.co/?page=1">next &gt;</a>
+                </li>
+        </ul>
+    </div>
+
+
+
+            <div>
+                <a href="https://voat.co/random">try a random subverse</a> or <a href="https://voat.co/randomnsfw">a NSFW random subverse</a>
+            </div>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+                window.onload = function () { firstTimeVisitorWelcome(); }
+    </script>
+    <div class="alert eppnotice alert-dismissible" role="alert">
+        <button type="button" class="btn-whoaverse-medium" data-dismiss="alert" aria-hidden="true">×</button>
+        Cookies help us deliver our services. By using our services, you agree to our use of cookies.
+    </div>
+
+
+
+
+<div class="footer-container">
+    <div class="footer">
+        <div>
+                <span class="separator"></span><a href="https://voat.co/advertize">advertise</a>
+                <span class="separator"></span><a href="https://store.voat.co/donations">donate</a>
+                <span class="separator"></span><a href="https://api.voat.co/">API</a>
+            <span class="separator"></span><a href="https://voat.co/about">about</a>
+            <span class="separator"></span><a href="https://voat.co/help/faq">faq</a>
+            <span class="separator"></span><a href="https://voat.co/help/markdown">markdown</a>
+            <span class="separator"></span><a href="https://github.com/voat/voat">source code</a>
+        </div>
+        <p class="bottommenu">
+            Use of this site constitutes acceptance of our <a href="https://voat.co/help/useragreement">User Agreement</a> and <a href="https://voat.co/help/privacy">Privacy Policy</a>.
+        </p>
+        <p class="bottommenu">
+            © 2018 Voat, Inc. All rights reserved. Voat and the Voat Mascot are trademarks of Voat, Inc.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+    
+    
+        <script type="text/javascript" src="./voat_files/jquery.min.js.download"></script>
+        <script type="text/javascript" src="./voat_files/bootstrap.min.js.download"></script>
+        <script type="text/javascript" src="./voat_files/voat.min.js.download"></script>
+    
+
+        
+    
+
+
+
+</body></html>
