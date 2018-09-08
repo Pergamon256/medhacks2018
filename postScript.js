@@ -1,47 +1,35 @@
-var voteCount = 0;
-function onUpvoteClick(){
+function onUpvoteClick(voteCountEl){
+    var voteCount = parseInt(document.getElementById((voteCountEl)).innerHTML,10);
     ++voteCount;
-    document.getElementById('voteCount').innerHTML = voteCount;
+    document.getElementById(voteCountEl).innerHTML = voteCount;
     if(voteCount >= 20){
-        document.getElementById('voteCount').style.color = "green";
+        document.getElementById(voteCountEl).style.color = "green";
     }
     else if(voteCount >= 10){
-        document.getElementById('voteCount').style.color = "blue";
+        document.getElementById(voteCountEl).style.color = "blue";
+    }
+    else if(voteCount >=0){
+        document.getElementById(voteCountEl).style.color = "black";
+    }
+    else{
+        document.getElementById(voteCountEl).style.color = "red";
     }
 }
 
-
-
-var commentVoteCount = 0;
-function onUpvoteCommentClick(){
-    ++commentVoteCount;
-    document.getElementById('commentVoteCount').innerHTML = commentVoteCount;
-    if(commentVoteCount >= 20){
-        document.getElementById('commentVoteCount').style.color = "green";
+function onDownvoteClick(voteCountEl){
+    var voteCount = parseInt(document.getElementById((voteCountEl)).innerHTML,10);
+    --voteCount;
+    document.getElementById(voteCountEl).innerHTML = voteCount;
+    if(voteCount >= 20){
+        document.getElementById(voteCountEl).style.color = "green";
     }
-    else if(commentVoteCount >= 10){
-        document.getElementById('commentVoteCount').style.color = "blue";
+    else if(voteCount >= 10){
+        document.getElementById(voteCountEl).style.color = "blue";
     }
-    else if(commentVoteCount >=0){
-        document.getElementById('commentVoteCount').style.color = "black";
+    else if(voteCount >=0){
+        document.getElementById(voteCountEl).style.color = "black";
     }
     else{
-        document.getElementById('commentVoteCount').style.color = "red";
-    }
-}
-function onDownvoteCommentClick(){
-    --commentVoteCount;
-    document.getElementById('commentVoteCount').innerHTML = commentVoteCount;
-    if(commentVoteCount >= 20){
-        document.getElementById('commentVoteCount').style.color = "green";
-    }
-    else if(commentVoteCount >= 10){
-        document.getElementById('commentVoteCount').style.color = "blue";
-    }
-    else if(commentVoteCount >=0){
-        document.getElementById('commentVoteCount').style.color = "black";
-    }
-    else{
-        document.getElementById('commentVoteCount').style.color = "red";
+        document.getElementById(voteCountEl).style.color = "red";
     }
 }

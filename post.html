@@ -35,7 +35,9 @@
                 <li > <button 
                     id = "upvoteButton"
                     class = "voteButton" 
-                    onclick="onUpvoteClick()"></button>
+                    onclick="onUpvoteClick()"
+                    style = ""
+                    ></button>
                 </li>
             </ul>                  
         </div>
@@ -66,21 +68,18 @@ The major conclusion to this study was that the gesturing condition showed highe
 
 </div>
 
-<hr class="commentTopLine">
-<div id = "commentContainer">
-        <div id = "voteButtonsComment">
+<div class = "commentContainer">
+        <div class = "voteButtonsComment">
             <ul style="list-style-type:none">
                     <li > <button 
-                        id = "upvoteButtonComment"
-                        class = "voteButtonComment" 
-                        onclick="onUpvoteCommentClick()"></button>
+                        class = "upvoteButtonComment"
+                        onclick="onUpvoteClick('commentVoteCount0')"></button>
                     </li>
-                    <li id ="commentVoteCount">0</li>
+                    <li class = commentVoteCount id ="commentVoteCount0">0</li>
 
                 <li > <button 
-                    id = "downvoteButtonComment"
-                    class = "voteButtonComment" 
-                    onclick="onDownvoteCommentClick()"></button>
+                    class = "downvoteButtonComment"
+                    onclick="onDownvoteClick('commentVoteCount0')"></button>
                 </li>
             </ul>                  
         </div>
@@ -88,8 +87,72 @@ The major conclusion to this study was that the gesturing condition showed highe
                 <h6 class = "commenterUserName">JaneDoe</h3>
                 <p class = "comment">  In this study there was no speech within the lesson. The only speech used was “This
 side is equal to the other side.” This was the only speech used within the lesson. Since this was the only speech, the lesson was highly dependent on the use of the gestures, which in my opinion could be questionable. Should gesture be tested with more verbal instruction. Does the gesture give the same effect? One may also ask, does this relate to older or younger kids who are learning a different type of math? </p>
+
         </div>
 </div>
-<hr class="commentBottomLine">
+
+<div class = "replyContainer">
+        <div class = "voteButtonsComment">
+            <ul style="list-style-type:none">
+                    <li > <button 
+                        class = "upvoteButtonReply"
+                        onclick="onUpvoteClick('commentVoteCount00')"></button>
+                    </li>
+                    <li class = "replyVoteCount" id ="commentVoteCount00">0</li>
+
+                <li > <button 
+                    class = "downvoteButtonReply"
+                    onclick="onDownvoteClick('commentVoteCount00')"></button>
+                </li>
+            </ul>                  
+        </div>
+        <div class = "commentContent">
+                <h6 class = "commenterUserName">Dr.Noor</h3>
+                <p class = "comment"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        </div>
+</div>
+
+<div class = "commentContainer">
+        <div class = "voteButtonsComment">
+            <ul style="list-style-type:none">
+                    <li > <button 
+                        class = "upvoteButtonComment"
+                        onclick="onUpvoteClick('commentVoteCount1')"></button>
+                    </li>
+                    <li class = commentVoteCount id ="commentVoteCount1">0</li>
+
+                <li > <button 
+                    class = "downvoteButtonComment"
+                    onclick="onDownvoteClick('commentVoteCount1')"></button>
+                </li>
+            </ul>                  
+        </div>
+        <div class = "commentContent">
+                <h6 class = "commenterUserName">Dr.Jill</h3>
+                <p class = "comment"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        </div>
+</div>
+
+<div class = "commentContainer">
+        <div class = "voteButtonsComment">
+            <ul style="list-style-type:none">
+                    <li > <button 
+                        class = "upvoteButtonComment"
+                        onclick="onUpvoteClick('commentVoteCount2')"></button>
+                    </li>
+                    <li class = commentVoteCount id ="commentVoteCount2">0</li>
+
+                <li > <button 
+                    class = "downvoteButtonComment"
+                    onclick="onDownvoteClick('commentVoteCount2')"></button>
+                </li>
+            </ul>                  
+        </div>
+        <div class = "commentContent">
+                <h6 class = "commenterUserName">Dr.Jim</h3>
+                <p class = "comment"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        </div>
+</div>
+
 </body>
 </html>
