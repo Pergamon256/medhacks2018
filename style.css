@@ -1,0 +1,24 @@
+body{
+    font-family: Georgia, "Times New Roman",
+    Times, serif;
+    color: black;
+}
+
+#upDownVoteButtons {
+    width: 200px;
+    
+}
+#postHeadingContainer{
+    display: flex;
+}
+#postHeading{
+    flex-grow: 1;
+}
+.voteButton{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+
