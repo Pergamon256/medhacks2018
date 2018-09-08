@@ -1,26 +1,35 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-<div class="w3-container">
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="Bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css">
+  </head>
 
-<p></p>
+<style type = "text/css">
+nav {
+  width: 100%
+  margin: 0 0 1em 0;
+    margin: 0 0 1em 0;
+  padding: 0;
+}
+</style>
 
-<div class="w3-bar w3-border w3-round w3-card-4 w3-light-grey w3-padding">
-  <a href="#" class="w3-bar-item w3-button w3-round">Home</a>
+<div id="nav" class="w3-container w3-bar w3-border w3-card-4 w3-light-grey w3-padding">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
   <div class="w3-dropdown-hover">
-      <button class="w3-button w3-round">Topics<i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-round">
-        <a href="#" class="w3-bar-item w3-button w3-round">Topic 1</a>
-        <a href="#" class="w3-bar-item w3-button w3-round">Topic 2</a>
-        <a href="#" class="w3-bar-item w3-button w3-round">Topic 3</a>
+      <button class="w3-button">Topics<i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Topic 1</a>
+        <a href="#" class="w3-bar-item w3-button">Topic 2</a>
+        <a href="#" class="w3-bar-item w3-button">Topic 3</a>
       </div>
     </div>
-  <input type="text" class="w3-right w3-bar-item w3-input w3-white w3-mobile w3-round" placeholder="Search">
-    <button class="w3-bar-item w3-button w3-green w3-mobile w3-right w3-round">Go</button>
+  <div class="w3-right">
+  <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search">
+    <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
+    </div>
 </div>
-</div>
-</body>
+
 </html>
