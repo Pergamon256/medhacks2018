@@ -20,6 +20,9 @@ body{
     margin-top: 10px;
     border: none;
 }
+#voteCount{
+    padding-left:7px;
+}
 #upvoteButton{
     background: url(upvoteIcon.png);
     background-size: cover;
@@ -34,15 +37,10 @@ body{
     margin-bottom:2px;
     margin-top: 0;
 }
-.commentTopLine{
-    margin-top: 25px;
-}
-.commentBotLine{
-    margin-bottom: 25px;
-}
 #post{
     border-style: solid;
     padding: 10px;
+    margin-bottom: 10px;
 }
 #authors{
     margin-top: 5px;
@@ -54,6 +52,9 @@ body{
 }
 .comment{
     margin: 0;
+}
+.commentVoteCount{
+    padding-left:4px;
 }
 
 .commentContainer{
@@ -86,6 +87,40 @@ body{
     width: 15px;
     height: 15px;
     margin-right: 10px;
+    margin-top: 5px;
+    border: none;
+}
+
+.replyContainer{
+    display: flex;
+    margin-left:50px;
+}
+
+.replyVoteCount{
+    padding-left:3px;
+}
+
+.upvoteButtonReply{
+    background: url(upvoteIcon.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
     margin-top: 10px;
+    border: none;
+}
+.downvoteButtonReply{
+    background: url(downvoteIcon.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
     border: none;
 }
