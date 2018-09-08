@@ -5,7 +5,7 @@ body{
 }
 
 #voteButtons {
-    width: 200px;
+    margin-right: 25px;
 }
 #postHeadingContainer{
     display: flex;
@@ -27,4 +27,63 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+#articleTitle{
+   margin: 0;
+}
+#posterUsername{
+    margin-bottom:2px;
+    margin-top: 0;
+}
+.commentTopLine{
+    margin-top: 25px;
+}
+.commentBotLine{
+    margin-bottom: 25px;
+}
+#post{
+    border-style: solid;
+    padding: 10px;
+}
+#authors{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.commenterUserName{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.comment{
+    margin: 0;
+}
 
+
+#commentContainer{
+    display: flex;
+}
+#voteButtonsComment {
+    width: 200px;
+}
+#commentContent{
+    flex-grow: 1;
+}
+.voteButtonComment{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+}
+#upvoteButtonComment{
+    background: url(upvoteIcon.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+#downvoteButtonComment{
+    background: url(downvoteIcon.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
