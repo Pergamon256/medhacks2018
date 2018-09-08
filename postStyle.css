@@ -56,14 +56,13 @@ body{
     margin: 0;
 }
 
-
-#commentContainer{
+.commentContainer{
     display: flex;
 }
-#voteButtonsComment {
+.voteButtonsComment {
     width: 200px;
 }
-#commentContent{
+.commentContent{
     flex-grow: 1;
 }
 .voteButtonComment{
@@ -73,14 +72,14 @@ body{
     margin-top: 10px;
     border: none;
 }
-#upvoteButtonComment{
+#upvoteButtonComment1{
     background: url(upvoteIcon.png);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-#downvoteButtonComment{
+#downvoteButtonComment1{
     background: url(downvoteIcon.png);
     background-size: cover;
     -webkit-background-size: cover;
