@@ -65,24 +65,27 @@ body{
 .commentContent{
     flex-grow: 1;
 }
-.voteButtonComment{
+.upvoteButtonComment{
+    background: url(upvoteIcon.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 15px;
     height: 15px;
     margin-right: 10px;
     margin-top: 10px;
     border: none;
 }
-#upvoteButtonComment1{
-    background: url(upvoteIcon.png);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-#downvoteButtonComment1{
+.downvoteButtonComment{
     background: url(downvoteIcon.png);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
 }
