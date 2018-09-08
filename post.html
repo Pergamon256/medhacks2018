@@ -5,13 +5,14 @@
 <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
+<script src="scripts\post.js"></script>
 
 <div id = "postHeadingContainer">
     <div id = "upDownVoteButtons">
         <ul style="list-style-type:none">
-            <li id="upvoteBtn" class = "voteButton"></li>
+            <li class = "voteButton"><button onclick="onUpvoteClick()">Click me</button></li>
             <li id ="voteCount">0</li>
-            <li id="downvoteBtn" class = "voteButton"></li>
+            <li class = "voteButton"><button onclick="onDownvoteClick()">Click me</button></li>
         </ul>                  
     </div>
     <div id = "postHeading">
