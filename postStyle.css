@@ -66,6 +66,23 @@ body{
 .commentContent{
     flex-grow: 1;
 }
+
+
+.litbutton{
+    background: url(paperIcon.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+
+
 .upvoteButtonComment{
     background: url(upvoteIcon.png);
     background-size: cover;
