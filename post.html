@@ -2,17 +2,20 @@
 <html>
 <head>
 <title>Post</title>
-<link rel = "stylesheet" href = "style.css">
+<link rel = "stylesheet" href = "postStyle.css">
 </head>
 <body>
-<script src="scripts\post.js"></script>
+<script src="postScript.js"></script>
 
 <div id = "postHeadingContainer">
     <div id = "upDownVoteButtons">
         <ul style="list-style-type:none">
-            <li class = "voteButton"><button onclick="onUpvoteClick()">Click me</button></li>
-            <li id ="voteCount">0</li>
-            <li class = "voteButton"><button onclick="onDownvoteClick()">Click me</button></li>
+                <li id ="voteCount">0</li>
+            <li > <button 
+                id = "upvoteButton"
+                class = "voteButton" 
+                onclick="onUpvoteClick()"></button>
+            </li>
         </ul>                  
     </div>
     <div id = "postHeading">
