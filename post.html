@@ -52,13 +52,35 @@ dfn:hover::before {top: 20px;}
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<meta charset = "UTF-8" />
+<link href="Bootstrap.css" rel="stylesheet" type="text/css">
+<link href="basicStyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 <body>
 <script src="postScript.js"></script>
+
+
+<div id="nav" class="w3-container w3-bar w3-border w3-card-4 w3-light-grey w3-padding">
+        <a href="./MainNoor.html" class="w3-bar-item w3-button">Home</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Topics</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="#" class="w3-bar-item w3-button">Education</a>
+              <a href="#" class="w3-bar-item w3-button">Radiology</a>
+              <a href="#" class="w3-bar-item w3-button">Robotics</a>
+            </div>
+          </div>
+        <div class="w3-right">
+        <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search">
+          <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
+          </div>
+      </div>
+      
+
 <div id="post">
-        <button style="float: left;" class="editIcon" onclick="onEditClick('commentVoteCount0')"><i ></i></button>
-    <div id = "postHeadingContainer">
-        <div id = "voteButtons">
+    <div id = "postHeadingContainer">  
             <ul style="list-style-type:none">
                     <li id ="voteCount">0</li>
                 <li > <button 
@@ -67,28 +89,23 @@ dfn:hover::before {top: 20px;}
                     onclick="onUpvoteClick('voteCount')"
                     ></button>
                 </li>
-            </ul>                  
-        </div>
-        <div id = "postHeading">
-                <h5 id = "posterUsername">Dr. Melvin the Moose <i style = "color: blue">PhD</i></h3>
-                <h1 id = "articleTitle">Gesturing Gives Children New Ideas About Math     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2750886/pdf/nihms115857.pdf"><button class="litbutton"> </button> <a> </h1>
+            </ul>  
+        <ul id = "postHeadingList">
+                <li>
+                        <h5 id = "posterUsername">Dr. Melvin the Moose <i style = "color: blue">PhD</i></h3>
+                        <h1 id = "articleTitle">Gesturing Gives Children New Ideas About Math <button class="litbutton" onclick="location.href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2750886/pdf/nihms115857.pdf'"> </button> <button class="editIcon" onclick="onEditClick()"></button></h1>
+                        <h3 id="authors">Susan Goldin-Meadow, Susan Wagner Cook, and Zachary A. Mitchell </h2>            
+                        </li>
+                <li id = "summary">
+                        The purpose of this study was to show how gesture can enhance math performance. It was an experimental research study that looked at how gesture effects children's learning of math, particularly addition. The independent variable was gesture with three different conditions; gesture, no gesture, and partial gesture. The dependent variable of the study was the difference between pre- and post- test scores on a math task. The <a href="https://en.wikipedia.org/wiki/Mediation_(statistics)"> mediator </a> variable was the speech being used during the lesson.<br /><br />
+                
+                The lesson was where the independent variable changed. Participants were brought in for the study and were first given a demographics worksheet. Once their demographics were determined, they were given a pre-test to be aware of prior knowledge. Once the pre-test was graded, a lesson was given either with gesture that was grouping through two fingers, no gesture or a partial gesture which was just pointing. Once the lesson on the math was given, the post-test was given. The experimenters then determined a difference from pre- to post- tests scores.<br /><br />
+                
+                The major conclusion to this study was that the gesturing condition showed higher math scores than the partially correct which was higher than the no gesture condition, showing that the gesturing actually aided in the child remembering the math task by using their body to perform it.
+                </li>
 
-                <h3 id="authors">Susan Goldin-Meadow, Susan Wagner Cook, and Zachary A. Mitchell </h2>            
-        </div>
-        <div>
-           <a href="./MainNoor.html"><button style="float: right;" class="homeIcon"><i class="fa fa-home"></i></button> <a>
-
-        </div>
-
-
+        </ul>
     </div>
-    <p id = "summary">
-      The purpose of this study was to show how gesture can enhance math performance. It was an experimental research study that looked at how gesture effects children's learning of math, particularly addition. The independent variable was gesture with three different conditions; gesture, no gesture, and partial gesture. The dependent variable of the study was the difference between pre- and post- test scores on a math task. The <a href="https://en.wikipedia.org/wiki/Mediation_(statistics)"><dfn data-info="In statistics, a mediation model is one that seeks to identify and explain the mechanism or process that underlies an observed relationship between an independent variable and a dependent variable via the inclusion of a third hypothetical variable, known as a mediator variable.">mediator</dfn></a> variable was the speech being used during the lesson.<br /><br />
-
-The lesson was where the independent variable changed. Participants were brought in for the study and were first given a demographics worksheet. Once their demographics were determined, they were given a pre-test to be aware of prior knowledge. Once the pre-test was graded, a lesson was given either with gesture that was grouping through two fingers, no gesture or a partial gesture which was just pointing. Once the lesson on the math was given, the post-test was given. The experimenters then determined a difference from pre- to post- tests scores.<br /><br />
-
-The major conclusion to this study was that the gesturing condition showed higher math scores than the partially correct which was higher than the no gesture condition, showing that the gesturing actually aided in the child remembering the math task by using their body to perform it.
-
 </div>
 
 <div class = "commentContainer">
@@ -108,7 +125,7 @@ The major conclusion to this study was that the gesturing condition showed highe
         </div>
         <div id = "commentContent">
                 <h6 class = "commenterUserName">Jane Doe</h3>
-                <p class = "comment">  In this study there was no speech within the lesson. The only speech used was "This side is equal to the other side." This was the only speech used within the lesson. Since this was the only speech, the lesson was highly dependent on the use of the gestures, which in my opinion could be questionable. The dependent variable of the study was the difference between pre- and post- test scores on a math task. Should gesture be tested with more verbal instruction. Does the gesture give the same effect? One may also ask, does this relate to older or younger kids who are learning a different type of math?</p>
+                <p class = "comment"> How much do you think speech affected the learning process? Do you think speech could improve the learning?</p>
         </div>
 </div>
 
@@ -129,7 +146,9 @@ The major conclusion to this study was that the gesturing condition showed highe
         </div>
         <div class = "commentContent">
                 <h6 class = "commenterUserName">Noor Khalil <i style = "color: blue">BA</i></h3>
-                <p class = "comment"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. <br /><br /> </p>
+                    <p class = "comment">
+                        In this study there was no speech within the lesson. The only speech used was "This side is equal to the other side." This was the only speech used within the lesson. Since this was the only speech, the lesson was highly dependent on the use of the gestures, which in my opinion could be questionable.
+                    </p>
         </div>
 </div>
 
@@ -150,7 +169,9 @@ The major conclusion to this study was that the gesturing condition showed highe
         </div>
         <div class = "commentContent">
                 <h6 class = "commenterUserName">Dr. Jill <i style = "color: blue">PhD</i></h3>
-                <p class = "comment"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. <br /><br /> </p>
+                <p class = "comment"> 
+                    The dependent variable of the study was the difference between pre- and post- test scores on a math task. Should gesture be tested with more verbal instruction. Does the gesture give the same effect? One may also ask, does this relate to older or younger kids who are learning a different type of math?
+                </p>
         </div>
 </div>
 
@@ -171,7 +192,7 @@ The major conclusion to this study was that the gesturing condition showed highe
         </div>
         <div class = "commentContent">
                 <h6 class = "commenterUserName">Dr. Jim <i style = "color: blue">PhD</i></h3>
-                <p class = "comment"> According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                <p class = "comment">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
         </div>
 </div>
 
