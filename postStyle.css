@@ -9,17 +9,21 @@ body{
 }
 #postHeadingList{
     list-style: none;
-    margin-left:-20;
+    padding-left: -10px;
+    margin-left:-10px;
 }
 .voteButton{
-    width: 20px;
-    height: 20px;
-    margin:-18px;
+    width: 25px;
+    height: 25px;
+    margin-left:-20px;
+    margin-right:0px;
+    margin-top:-20px;
     border: none;
 }
 #voteCount{
     margin-left: -10px;
     margin-bottom: 15px;
+    
 }
 #upvoteButton{
     background: url(upvoteIcon.png);
@@ -37,7 +41,7 @@ body{
 }
 #post{
     border-style: solid;
-    padding: 10px;
+    padding: 0px;
     margin-bottom: 10px;
 }
 #authors{
@@ -57,9 +61,12 @@ body{
 
 .commentContainer{
     display: flex;
+    margin-bottom: -10px;
 }
 .voteButtonsComment {
-    width: 200px;
+    margin-right: 10px;
+    margin-left: -18px;
+
 }
 .commentContent{
     flex-grow: 1;
@@ -117,6 +124,9 @@ body{
 .replyContainer{
     display: flex;
     margin-left:50px;
+    margin-top:-45px;
+    padding-top:-45px;
+
 }
 
 .replyVoteCount{

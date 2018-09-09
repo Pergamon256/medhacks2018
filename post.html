@@ -203,7 +203,7 @@ function filterFunction() {
 <div id="post">
     <div id = "postHeadingContainer">  
             <ul style="list-style-type:none">
-                    <li id ="voteCount">0</li>
+                    <li><h4 id ="voteCount">0</h4></li>
                 <li > <button 
                     id = "upvoteButton"
                     class = "voteButton" 
@@ -218,7 +218,7 @@ function filterFunction() {
                         <h3 id="authors">Susan Goldin-Meadow, Susan Wagner Cook, and Zachary A. Mitchell </h2>            
                         </li>
                 <li id = "summary">
-                        The purpose of this study was to show how gesture can enhance math performance. It was an experimental research study that looked at how gesture effects children's learning of math, particularly addition. The independent variable was gesture with three different conditions; gesture, no gesture, and partial gesture. The dependent variable of the study was the difference between pre- and post- test scores on a math task. The <a href="https://en.wikipedia.org/wiki/Mediation_(statistics)"><dfn data-info="In statistics, a mediation model is one that seeks to identify and explain the mechanism or process that underlies an observed relationship between an independent variable and a dependent variable via the inclusion of a third hypothetical variable, known as a mediator variable.">mediator</dfn></a> variable was the speech being used during the lesson.<br /><br />
+                The purpose of this study was to show how gesture can enhance math performance. It was an experimental research study that looked at how gesture effects children's learning of math, particularly addition. The independent variable was gesture with three different conditions; gesture, no gesture, and partial gesture. The dependent variable of the study was the difference between pre- and post- test scores on a math task. The <a href="https://en.wikipedia.org/wiki/Mediation_(statistics)"> mediator</a> variable was the speech being used during the lesson.<br /><br />
                 
                 The lesson was where the independent variable changed. Participants were brought in for the study and were first given a demographics worksheet. Once their demographics were determined, they were given a pre-test to be aware of prior knowledge. Once the pre-test was graded, a lesson was given either with gesture that was grouping through two fingers, no gesture or a partial gesture which was just pointing. Once the lesson on the math was given, the post-test was given. The experimenters then determined a difference from pre- to post- tests scores.<br /><br />
                 
@@ -230,8 +230,7 @@ function filterFunction() {
 </div>
 
 <div class = "commentContainer">
-        <div class = "voteButtonsComment">
-            <ul style="list-style-type:none">
+            <ul style="list-style-type:none" class = "voteButtonsComment">
                     <li > <button 
                         class = "upvoteButtonComment"
                         onclick="onUpvoteClick('commentVoteCount0')"></button>
@@ -243,7 +242,6 @@ function filterFunction() {
                     onclick="onDownvoteClick('commentVoteCount0')"></button>
                 </li>
             </ul>                  
-        </div>
         <div id = "commentContent">
                 <h6 class = "commenterUserName">Jane Doe</h3>
                 <p class = "comment"> How much do you think speech affected the learning process? Do you think speech could improve the learning?</p>
@@ -274,8 +272,7 @@ function filterFunction() {
 </div>
 
 <div class = "commentContainer">
-        <div class = "voteButtonsComment">
-            <ul style="list-style-type:none">
+            <ul class = "voteButtonsComment" style="list-style-type:none">
                     <li > <button 
                         class = "upvoteButtonComment"
                         onclick="onUpvoteClick('commentVoteCount1')"></button>
@@ -287,7 +284,6 @@ function filterFunction() {
                     onclick="onDownvoteClick('commentVoteCount1')"></button>
                 </li>
             </ul>                  
-        </div>
         <div class = "commentContent">
                 <h6 class = "commenterUserName">Dr. Jill <i style = "color: blue">PhD</i></h3>
                 <p class = "comment"> 
