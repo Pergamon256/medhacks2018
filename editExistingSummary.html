@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Edit Existing Summary</title>
+	<link rel = "stylesheet" href = "editExistingSummaryStyle.css">
+
+</head>
+
+<body>
+	<script src="postScript.js"></script>
+<div>
+	<h1>
+		Edit the summary and submit your changes here!
+    </h1>
+       <textarea id = "newSummary" name="newSumName" placeholder="Write your summary here" rows="20" cols="120" color = "black" style = "resize: none">
+	   </textarea>
+	   <script type = "text/javascript">
+	   document.getElementById('newSummary').value = sessionStorage.getItem('oldSummary');
+		</script>
+</div>
+
+<button class="button button2">Submit</button>
+
+</body>
+</html>
