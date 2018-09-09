@@ -1,49 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+    <meta charset = "UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="Bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css">
   <style type="text/css">
+    
     dfn {
-  background: rgba(0,0,0,0.2);
-  border-bottom: dashed 1px rgba(0,0,0,0.8);
-  padding: 0 0.4em;
-  cursor: help;
-  font-style: normal;
-  position: relative;
-  
-}
-dfn::after {
-  content: attr(data-info);
-  display: inline;
-  position: absolute;
-  top: 22px; left: 0;
-  opacity: 0;
-  width: 230px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.5em;
-  padding: 0.5em 0.8em;
-  background: rgba(0,0,0,0.8);
-  color: #fff;
-  pointer-events: none; /* This prevents the box from apearing when hovered. */
-  transition: opacity 250ms, top 250ms;
-}
-dfn::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 12px; left: 20px;
-  opacity: 0;
-  width: 0; height: 0;
-  border: solid transparent 5px;
-  border-bottom-color: rgba(0,0,0,0.8);
-  transition: opacity 250ms, top 250ms;
-}
-dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
-dfn:hover::after,
-dfn:hover::before {opacity: 1;}
-dfn:hover::after {top: 30px;}
-dfn:hover::before {top: 20px;}
+      background: rgba(0,0,0,0.2);
+      border-bottom: dashed 1px rgba(0,0,0,0.8);
+      padding: 0 0.4em;
+      cursor: help;
+      font-style: normal;
+      position: relative;
+    }
+    
+    dfn::after {
+      content: attr(data-info);
+      display: inline;
+      position: absolute;
+      top: 22px; left: 0;
+      opacity: 0;
+      width: 230px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.5em;
+      padding: 0.5em 0.8em;
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      pointer-events: none; /* This prevents the box from apearing when hovered. */
+      transition: opacity 250ms, top 250ms;
+    }
+    
+    dfn::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 12px; left: 20px;
+      opacity: 0;
+      width: 0; height: 0;
+      border: solid transparent 5px;
+      border-bottom-color: rgba(0,0,0,0.8);
+      transition: opacity 250ms, top 250ms;
+    }
+    
+    dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+    dfn:hover::after,
+    dfn:hover::before {opacity: 1;}
+    dfn:hover::after {top: 30px;}
+    dfn:hover::before {top: 20px;}
+
+    .dropbtn {
+      background-color: #f1f1f1;
+      color: black;
+      padding: 7px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #cccccc;
+    }
+
+    #myInput {
+      border-box: box-sizing;
+      background-image: url('searchicon.png');
+      background-position: 14px 12px;
+      background-repeat: no-repeat;
+      font-size: 16px;
+      padding: 14px 20px 12px 45px;
+      border: none;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #myInput:focus {
+      outline: 3px solid #ddd;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f6f6f6;
+      min-width: 230px;
+      overflow: auto;
+      border: 1px solid #ddd;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+
+    #nav {
+      width: 100%
+      margin: 0 0 1em 0;
+      margin: 0 0 1em 0;
+      padding: 0;
+    }
   </style>
 
 <title>Post</title>
@@ -63,21 +134,71 @@ dfn:hover::before {top: 20px;}
 
 
 <div id="nav" class="w3-container w3-bar w3-border w3-card-4 w3-light-grey w3-padding">
-        <a href="./MainNoor.html" class="w3-bar-item w3-button">Home</a>
-        <div class="w3-dropdown-hover">
-            <button class="w3-button">Topics</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-              <a href="#" class="w3-bar-item w3-button">Education</a>
-              <a href="#" class="w3-bar-item w3-button">Radiology</a>
-              <a href="#" class="w3-bar-item w3-button">Robotics</a>
-            </div>
-          </div>
-        <div class="w3-right">
-        <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search">
-          <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
-          </div>
-      </div>
+  <a href="MainNoor.html" class="w3-bar-item w3-button">Home</a>
+  <div class="w3-dropdown-hover dropdown">
+  <button onclick="myFunction()" class="dropbtn">Topics</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#Ablation">Ablation</a>
+      <a href="#Bioinformatics">Bioinformatics</a>
+      <a href="#Biotechnology">Biotechnology</a>
+      <a href="#Cancer">Cancer</a>
+      <a href="#Chemical Engineering">Chemical Engineering</a>
+      <a href="#Education">Education</a>
+      <a href="#Radiology">Radiology</a>
+      <a href="#Robotics">Robotics</a>
+      <a href="#Sepsis">Sepsis</a>
+      <a href="#Tech in Medicine">Tech in Medicine</a>
+    </div>
+  </div>
+  <a href="Requests.html" class="w3-bar-item w3-button">Requests</a>
+  <div class="w3-right">
+    <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search">
+    <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
+    <a href="SignIn.html" class="w3-bar-item w3-button">Sign In</a>
+  </div>
+</div>
       
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+        </div>
+       
+            
+    </div> 
+    </div>
+</div>  
+    <script>
+              $(function() {
+    $('#profile-image1').on('click', function() {
+        $('#profile-image-upload').click();
+    });
+});       
+              </script>
 
 <div id="post">
     <div id = "postHeadingContainer">  
@@ -97,7 +218,7 @@ dfn:hover::before {top: 20px;}
                         <h3 id="authors">Susan Goldin-Meadow, Susan Wagner Cook, and Zachary A. Mitchell </h2>            
                         </li>
                 <li id = "summary">
-                        The purpose of this study was to show how gesture can enhance math performance. It was an experimental research study that looked at how gesture effects children's learning of math, particularly addition. The independent variable was gesture with three different conditions; gesture, no gesture, and partial gesture. The dependent variable of the study was the difference between pre- and post- test scores on a math task. The <a href="https://en.wikipedia.org/wiki/Mediation_(statistics)"> mediator </a> variable was the speech being used during the lesson.<br /><br />
+                        The purpose of this study was to show how gesture can enhance math performance. It was an experimental research study that looked at how gesture effects children's learning of math, particularly addition. The independent variable was gesture with three different conditions; gesture, no gesture, and partial gesture. The dependent variable of the study was the difference between pre- and post- test scores on a math task. The <a href="https://en.wikipedia.org/wiki/Mediation_(statistics)"><dfn data-info="In statistics, a mediation model is one that seeks to identify and explain the mechanism or process that underlies an observed relationship between an independent variable and a dependent variable via the inclusion of a third hypothetical variable, known as a mediator variable.">mediator</dfn></a> variable was the speech being used during the lesson.<br /><br />
                 
                 The lesson was where the independent variable changed. Participants were brought in for the study and were first given a demographics worksheet. Once their demographics were determined, they were given a pre-test to be aware of prior knowledge. Once the pre-test was graded, a lesson was given either with gesture that was grouping through two fingers, no gesture or a partial gesture which was just pointing. Once the lesson on the math was given, the post-test was given. The experimenters then determined a difference from pre- to post- tests scores.<br /><br />
                 
