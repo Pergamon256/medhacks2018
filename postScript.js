@@ -38,9 +38,3 @@ function onEditClick(){
     sessionStorage.setItem('oldSummary',document.getElementById('summary').innerHTML.replace(/<(?:.|\n)*?>/gm, ''));
     window.location.href="editExistingSummary.html";
 }
-
-function submitSummaryChanges(){
-    sessionStorage.setItem('newSummary',document.getElementById('newSummary').value);
-    window.location.href="post.html";
-}
-
