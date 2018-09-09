@@ -59,23 +59,31 @@
 <body>
 <script src="postScript.js"></script>
 
-
 <div id="nav" class="w3-container w3-bar w3-border w3-card-4 w3-light-grey w3-padding">
-        <a href="./MainNoor.html" class="w3-bar-item w3-button">Home</a>
-        <div class="w3-dropdown-hover">
-            <button class="w3-button">Topics</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-              <a href="#" class="w3-bar-item w3-button">Education</a>
-              <a href="#" class="w3-bar-item w3-button">Radiology</a>
-              <a href="#" class="w3-bar-item w3-button">Robotics</a>
-            </div>
-          </div>
-        <div class="w3-right">
-        <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search">
-          <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
-          </div>
-      </div>
-</head>
+  <a href="MainNoor.html" class="w3-bar-item w3-button">Home</a>
+  <div class="w3-dropdown-hover dropdown">
+  <button onclick="myFunction()" class="dropbtn">Topics</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#Ablation">Ablation</a>
+      <a href="#Bioinformatics">Bioinformatics</a>
+      <a href="#Biotechnology">Biotechnology</a>
+      <a href="#Cancer">Cancer</a>
+      <a href="#Chemical Engineering">Chemical Engineering</a>
+      <a href="#Education">Education</a>
+      <a href="#Radiology">Radiology</a>
+      <a href="#Robotics">Robotics</a>
+      <a href="#Sepsis">Sepsis</a>
+      <a href="#Tech in Medicine">Tech in Medicine</a>
+    </div>
+  </div>
+  <a href="Requests.html" class="w3-bar-item w3-button">Requests</a>
+  <div class="w3-right">
+    <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search">
+    <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
+    <a href="SignIn.html" class="w3-bar-item w3-button">Sign In</a>
+  </div>
+</div>
 
 <body>
 
