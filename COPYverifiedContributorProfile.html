@@ -35,16 +35,16 @@
 		}
 
     .dropbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px;
+      background-color: #f1f1f1;
+      color: black;
+      padding: 7px;
       font-size: 16px;
       border: none;
       cursor: pointer;
     }
 
     .dropbtn:hover, .dropbtn:focus {
-      background-color: #3e8e41;
+      background-color: #cccccc;
     }
 
     #myInput {
@@ -102,14 +102,22 @@
 
 <div id="nav" class="w3-container w3-bar w3-border w3-card-4 w3-light-grey w3-padding">
   <a href="#" class="w3-bar-item w3-button">Home</a>
-  <div class="w3-dropdown-hover">
-      <button class="w3-button">Topics<i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Education</a>
-        <a href="#" class="w3-bar-item w3-button">Radiology</a>
-        <a href="#" class="w3-bar-item w3-button">Robotics</a>
-      </div>
+  <div class="w3-dropdown-hover dropdown">
+  <button onclick="myFunction()" class="dropbtn">Topics</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="#Ablation">Ablation</a>
+      <a href="#Bioinformatics">Bioinformatics</a>
+      <a href="#Biotechnology">Biotechnology</a>
+      <a href="#Cancer">Cancer</a>
+      <a href="#Chemical Engineering">Chemical Engineering</a>
+      <a href="#Education">Education</a>
+      <a href="#Radiology">Radiology</a>
+      <a href="#Robotics">Robotics</a>
+      <a href="#Sepsis">Sepsis</a>
+      <a href="#Tech in Medicine">Tech in Medicine</a>
     </div>
+  </div>
   <div class="w3-right">
   <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search">
     <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
@@ -159,7 +167,7 @@
             <hr style="margin:5px 0 5px 0;">
     
               
-<div class="col-sm-5 col-xs-6 tital " >First Name:</div><div class="col-sm-7">Melvin</div>
+<div class="tital" >First Name:</div><div>Melvin</div>
      <div class="clearfix"></div>
 <div class="bot-border"></div>
 
@@ -169,11 +177,11 @@
 <div class="bot-border"></div>
 -->
 
-<div class="col-sm-5 col-xs-6 tital " >Last Name:</div><div class="col-sm-7"> Moose</div>
+<div class="tital" >Last Name:</div><div> Moose</div>
   <div class="clearfix"></div>
 <div class="bot-border"></div>
 
-<div class="col-sm-5 col-xs-6 tital " >Date Of Joining:</div><div class="col-sm-7">8 Sep 2018</div>
+<div class="tital" >Date Of Joining:</div><div>8 Sep 2018</div>
 
   <div class="clearfix"></div>
 <div class="bot-border"></div>
@@ -195,30 +203,12 @@
 <div class="bot-border"></div>
 -->
 
-<div class="col-sm-5 col-xs-6 tital " >Affiliation:</div><div class="col-sm-7">BS, Johns Hopkins University<br>MD, JHU School of Medicine</div>
+<div class="tital " >Affiliation:</div><div>BS, Johns Hopkins University<br>MD, JHU School of Medicine</div>
 
 <div class="clearfix"></div>
 <div class="bot-border"></div>
 
-<div class="col-sm-5 col-xs-6 tital " >Area of Expertise:</div><div class="col-sm-7">Pathology<br>Bioinformatics<br>Immunology<br>Geology<br>Physics</div>
-
-<br>
-
-<p>Click on the button below to search for a specific topic.</p>
-
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Topics</button>
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-    <a href="#about">Ablation</a>
-    <a href="#base">Bioinformatics</a>
-    <a href="#blog">Biotechnology</a>
-    <a href="#contact">Cancer</a>
-    <a href="#custom">Chemical Engineering</a>
-    <a href="#support">Sepsis</a>
-    <a href="#tools">Tech in Medicine</a>
-  </div>
-</div>
+<div class="tital " >Area of Expertise:</div><div>Pathology<br>Bioinformatics<br>Immunology<br>Geology<br>Physics<br>Canada</div>
 
 <script>
 /* When the user clicks on the button,
