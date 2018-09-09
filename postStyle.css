@@ -2,6 +2,7 @@ body{
     font-family: Georgia, "Times New Roman",
     Times, serif;
     color: black;
+        background: rgb(226, 331, 366);
 }
 
 #postHeadingContainer{
@@ -157,3 +158,21 @@ body{
     margin-top: 5px;
     border: none;
 }
+
+.logo{
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    margin-right:10px;
+    border: none;
+    }
+    .titleContainer{
+      display: flex;
+    }
+    .title{
+      margin:0;
+    }
