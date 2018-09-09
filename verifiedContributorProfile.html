@@ -16,37 +16,31 @@
 			position: absolute;
 			left: -9999px;
 		}
-
 		#profile-image1 {
 			cursor: pointer;
 			width: 100px;
 			height: 100px;
 			border:2px solid #03b1ce ;
 		}
-
 		.tital {
 			font-size:16px;
 			font-weight:500;
 		}
-
 		.bot-border {
 			border-bottom:1px #f8f8f8 solid;
 			margin:5px 0  5px 0
 		}
-
     .dropbtn {
       background-color: #f1f1f1;
       color: black;
       padding: 7px;
-      font-size: 16px;
+      font-size: 14px;
       border: none;
       cursor: pointer;
     }
-
     .dropbtn:hover, .dropbtn:focus {
       background-color: #cccccc;
     }
-
     #myInput {
       border-box: box-sizing;
       background-image: url('searchicon.png');
@@ -57,16 +51,13 @@
       border: none;
       border-bottom: 1px solid #ddd;
     }
-
     #myInput:focus {
       outline: 3px solid #ddd;
     }
-
     .dropdown {
       position: relative;
       display: inline-block;
     }
-
     .dropdown-content {
       display: none;
       position: absolute;
@@ -76,22 +67,18 @@
       border: 1px solid #ddd;
       z-index: 1;
     }
-
     .dropdown-content a {
       color: black;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
     }
-
     .dropdown a:hover {
       background-color: #ddd;
     }
-
     .show {
       display: block;
     }
-
 	</style>
 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -101,7 +88,7 @@
 </head>
 
 <div id="nav" class="w3-container w3-bar w3-border w3-card-4 w3-light-grey w3-padding">
-  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="MainNoor.html" class="w3-bar-item w3-button">Home</a>
   <div class="w3-dropdown-hover dropdown">
   <button onclick="myFunction()" class="dropbtn">Topics</button>
     <div id="myDropdown" class="dropdown-content">
@@ -188,17 +175,12 @@
 
 <!--
 <div class="col-sm-5 col-xs-6 tital " >Date Of Birth:</div><div class="col-sm-7">26 Aug 1988</div>
-
   <div class="clearfix"></div>
 <div class="bot-border"></div>
-
 <div class="col-sm-5 col-xs-6 tital " >Place Of Birth:</div><div class="col-sm-7"></div>
-
  <div class="clearfix"></div>
 <div class="bot-border"></div>
-
 <div class="col-sm-5 col-xs-6 tital " >Nationality:</div><div class="col-sm-7">Indian</div>
-
  <div class="clearfix"></div>
 <div class="bot-border"></div>
 -->
@@ -208,7 +190,7 @@
 <div class="clearfix"></div>
 <div class="bot-border"></div>
 
-<div class="tital " >Area of Expertise:</div><div>Pathology<br>Bioinformatics<br>Immunology<br>Geology<br>Physics<br>Canada</div>
+<div class="tital " >Area(s) of Expertise:</div><div>Pathology<br>Bioinformatics<br>Immunology<br>Geology<br>Physics<br>Canada</div>
 
 <script>
 /* When the user clicks on the button,
@@ -216,7 +198,6 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
 function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
