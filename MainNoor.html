@@ -17,7 +17,6 @@
   body {
     background: linear-gradient(to right, rgb(166, 301, 244) , teal);
   }
-
   .dropbtn {
       background-color: #f1f1f1;
       color: black;
@@ -26,11 +25,9 @@
       border: none;
       cursor: pointer;
     }
-
     .dropbtn:hover, .dropbtn:focus {
       background-color: #cccccc;
     }
-
     #myInput {
       border-box: box-sizing;
       background-image: url('searchicon.png');
@@ -41,16 +38,13 @@
       border: none;
       border-bottom: 1px solid #ddd;
     }
-
     #myInput:focus {
       outline: 3px solid #ddd;
     }
-
     .dropdown {
       position: relative;
       display: inline-block;
     }
-
     .dropdown-content {
       display: none;
       position: absolute;
@@ -60,22 +54,18 @@
       border: 1px solid #ddd;
       z-index: 1;
     }
-
     .dropdown-content a {
       color: black;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
     }
-
     .dropdown a:hover {
       background-color: #ddd;
     }
-
     .show {
       display: block;
     }
-
     #nav {
       width: 100%;
       margin: 0 0 1em 0;
@@ -99,8 +89,6 @@
     .title{
       margin:0;
     }
-
-
 </style>
 
 <!-- Search Bar 
@@ -146,7 +134,6 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
 function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
@@ -211,11 +198,9 @@ function filterFunction() {
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
